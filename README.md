@@ -33,7 +33,7 @@ root = user
 * exit;
 
 ## firewall setting
-
+* dnf install -y firewalld (ถ้า bash: firewall-cmd: command not found)
 * firewall-cmd --zone=public --add-port=80/tcp --permanent  ----> [http]
 * firewall-cmd --zone=public --add-port=443/tcp --permanent   ----> [https]
 * firewall-cmd --reload
